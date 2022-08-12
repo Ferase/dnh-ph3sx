@@ -9975,7 +9975,7 @@
             }
         ],
         "return": {},
-        "description": "Unloads the given given from the script source cache.",
+        "description": "Unloads the given script from the script source cache.",
         "notes": "ph3sx function.\n\nDoes nothing if the script does not exist in the cache."
     },
     {
