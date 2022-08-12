@@ -12,7 +12,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Added
 
 + All ph3sx functions as of engine version 1.32b
-+ Syntax for all ph3sx loop types, veriable declarations, constants, and more
++ Syntax for all ph3sx loop types, variable  declarations, constants, and more
 + Snippets for for loops, for-each loops, async, and functions with return types
 
 ### Changed
