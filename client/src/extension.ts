@@ -24,8 +24,8 @@ export function activate (context: ExtensionContext): void {
 
   const clientOptions: LanguageClientOptions = {
     documentSelector: [
-      { scheme: 'file', language: 'dnh' },
-      { scheme: 'untitled', language: 'dnh' }
+      { scheme: 'file', language: 'dnh-ph3sx' },
+      { scheme: 'untitled', language: 'dnh-ph3sx' }
     ]
   }
 

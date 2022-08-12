@@ -5,6 +5,26 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [1.10.0-ph3sx]
+
+## [1.10.0-ph3sx] - 2022-08-12
+
+### Added
+
++ All ph3sx functions as of engine version 1.32b
++ Syntax for all ph3sx loop types, veriable declarations, constants, and more
++ Snippets for for loops, for-each loops, async, and functions with return types
+
+### Changed
+
++ Updated all original ph3 functions that have been modified in ph3sx
++ Updated dependencies
+
+### Fixed
+
++ Fixed all function entries that contained outdated or copy-paste errors
+
+
 ## [Unreleased]
 
 ## [1.10.0] - 2020-02-06

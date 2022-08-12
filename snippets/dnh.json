@@ -1,5 +1,12 @@
 {
-  "Insert variable": {
+  "Insert a variable (var)": {
+    "prefix": "var",
+    "body": [
+      "var ${1:variableName}"
+    ],
+    "description": "Insert a variable"
+  },
+  "Insert a variable (let)": {
     "prefix": "let",
     "body": [
       "let ${1:variableName}"
@@ -73,7 +80,7 @@
   "Insert yield": {
     "prefix": "yield",
     "body": [
-      "yield"
+      "yield;"
     ],
     "description": "Insert a yield"
   },
@@ -101,5 +108,121 @@
       "#include \"${1:scriptPath}\""
     ],
     "description": "Insert an include"
+  },
+  "Insert for": {
+    "prefix": "for",
+    "body": [
+      "for (in in ${1:0}..${2:10}) {",
+      "\t${3:// do something}",
+      "}"
+    ],
+    "description": "Insert a for loop (ph3sx)"
+  },
+  "Insert for each": {
+    "prefix": "for each",
+    "body": [
+      "for each (in in ${1:0}..${2:10}) {",
+      "\t${3:// do something}",
+      "}"
+    ],
+    "description": "Insert a for-each loop (ph3sx)"
+  },
+  "Insert async": {
+    "prefix": "async",
+    "body": [
+      "async {",
+      "\t${3:// do something}",
+      "}"
+    ],
+    "description": "Insert an async task (ph3sx)"
+  },
+  "Insert an integer-type variable": {
+    "prefix": "int",
+    "body": [
+      "int ${1:variableName}"
+    ],
+    "description": "Insert an integer-type variable (ph3sx)"
+  },
+  "Insert a float-type variable": {
+    "prefix": "float",
+    "body": [
+      "float ${1:variableName}"
+    ],
+    "description": "Insert a float-type variable (ph3sx)"
+  },
+  "Insert a string-type variable": {
+    "prefix": "string",
+    "body": [
+      "string ${1:variableName}"
+    ],
+    "description": "Insert a string-type variable (ph3sx)"
+  },
+  "Insert a character-type variable": {
+    "prefix": "char",
+    "body": [
+      "char ${1:variableName}"
+    ],
+    "description": "Insert a character-type variable (ph3sx)"
+  },
+  "Insert a boolean-type variable": {
+    "prefix": "bool",
+    "body": [
+      "bool ${1:variableName}"
+    ],
+    "description": "Insert a boolean-type variable (ph3sx)"
+  },
+  "Insert function<void>": {
+    "prefix": "function<void>",
+    "body": [
+      "function<void> functionName (${1:arguments}) {",
+      "\t${2:// do something and return nothing}",
+      "}"
+    ],
+    "description": "Insert a function that will return nothing (ph3sx)"
+  },
+  "Insert function<int>": {
+    "prefix": "function<int>",
+    "body": [
+      "function<int> functionName (${1:arguments}) {",
+      "\t${2:// do something and return an integer value}",
+      "}"
+    ],
+    "description": "Insert a function that will return an integer value (ph3sx)"
+  },
+  "Insert function<float>": {
+    "prefix": "function<float>",
+    "body": [
+      "function<float> functionName (${1:arguments}) {",
+      "\t${2:// do something and return a float value}",
+      "}"
+    ],
+    "description": "Insert a function that will return a floating-point value (ph3sx)"
+  },
+  "Insert function<string>": {
+    "prefix": "function<string>",
+    "body": [
+      "function<string> functionName (${1:arguments}) {",
+      "\t${2:// do something and return a text string}",
+      "}"
+    ],
+    "description": "Insert a function that will return a text string (ph3sx)"
+  },
+  "Insert function<char>": {
+    "prefix": "function<char>",
+    "body": [
+      "function<char> functionName (${1:arguments}) {",
+      "\t${2:// do something and return a text character}",
+      "}"
+    ],
+    "description": "Insert a function that will return a text character (ph3sx)"
+  },
+  "Insert function<bool>": {
+    "prefix": "function<bool>",
+    "body": [
+      "function<bool> functionName (${1:arguments}) {",
+      "\t${2:// do something and return a boolean value}",
+      "}"
+    ],
+    "description": "Insert a function that will return a boolean value (ph3sx)"
   }
 }

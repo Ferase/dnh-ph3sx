@@ -4,18 +4,13 @@
     alt="Drawing of Flandre Scarlet by Alphes"
     width="182">
   <br>
-  dnh
-  <a href="https://marketplace.visualstudio.com/items?itemName=mserajnik.dnh">
-    <img
-      src="https://img.shields.io/vscode-marketplace/v/mserajnik.dnh.svg"
-      alt="dnh on the VS Code Marketplace">
+  dnh-ph3sx
+  <a href="https://travis-ci.com/Ferase/dnh-ph3sx">
+    <img src="https://travis-ci.com/Ferase/dnh-ph3sx.svg" alt="Build status">
   </a>
-  <a href="https://travis-ci.com/mserajnik/dnh">
-    <img src="https://travis-ci.com/mserajnik/dnh.svg" alt="Build status">
-  </a>
-  <a href="https://snyk.io/test/github/mserajnik/dnh">
+  <a href="https://snyk.io/test/github/Ferase/dnh-ph3sx">
     <img
-      src="https://snyk.io/test/github/mserajnik/dnh/badge.svg"
+      src="https://snyk.io/test/github/Ferase/dnh-ph3sx/badge.svg"
       alt="Known vulnerabilities">
   </a>
   <a href="https://standardjs.com">
@@ -31,12 +26,20 @@
 
 This is a simple [Visual Studio Code][vs-code] extension that adds some
 features to make developing [Touhou Danmakufu][touhou-danmakufu] scripts more
-comfortable. It currently features:
+comfortable.
+
+## Note
+
+This is a modified version of the original [DNH VSCode extension by Michael Serajnik](https://github.com/imtbl/dnh) that contains updates for ph3sx. All original code for this extension was made by [mserajnik][maintainer-url] and all I did was add all of the new features and functions ph3sx into the existing files.
+
+This fork will be actively maintained as ph3sx is updated and changes/fixes/etc. are found and made to the plugin. All of the below descripts have been modified to include new features, though the majority of their content hasn't been changed as to retain the original documentation of this plugin by the original creator.
+
+The plugin currently features:
 
 + Syntax highlighting
-+ Code completion for ph3 engine library functions, headers, routines and
++ Code completion for ph3sx engine library functions, headers, routines and
   shot/item data
-+ On-Demand documentation for ph3 engine library functions, headers, routines
++ On-Demand documentation for ph3sx engine library functions, headers, routines
   and shot/item data (on hover)
 + A variety of useful snippets
 
@@ -75,7 +78,7 @@ where VS Code would default to plain text without highlighting).
 
 ### Completion
 
-Code completion is currently available for ph3 engine library functions,
+Code completion is currently available for ph3sx engine library functions,
 headers, routines and shot/item data. The completion system is triggered simply
 by typing and will automatically try to match the most relevant result from the
 list. You can also navigate the list with
@@ -93,7 +96,7 @@ settings, the info window might be opened by default).
 
 ### Documentation
 
-Documentation is available for the same types as completion (ph3 engine library
+Documentation is available for the same types as completion (ph3sx engine library
 functions, headers, routines and shot/item data). It comes in the form of info
 windows that are activated on hover and display similar information as when
 clicking on the `ⓘ` icon on completion items.
@@ -116,21 +119,37 @@ correct snippet in the list.
 
 The following is a list of keywords that are associated to a snippet:
 
++ `var`
 + `let`
++ `int`
++ `float`
++ `string`
++ `char`
++ `bool`
 + `if`
 + `alternative`
 + `loop`
 + `while`
 + `ascent`
++ `for`
++ `for each`
 + `local`
-+ `yield` (type `y` and hit <kbd>Tab ⇥</kbd> instead of typing the full word)
++ `yield;` (type `y` and hit <kbd>Tab ⇥</kbd> instead of typing the full word)
 + `function`
++ `function<void>`
++ `function<int>`
++ `function<float>`
++ `function<string>`
++ `function<char>`
++ `function<bool>`
 + `task`
++ `async`
 + `include`
 
 ## Maintainer
 
 [mserajnik][maintainer-url]
+[Ferase][secondary-maintainer-url]
 
 ## Contribute
 
@@ -157,7 +176,7 @@ or uses it or parts of it in their own software/projects is allowed to use
 
 ## License
 
-[MIT](LICENSE.md) © Michael Serajnik
+[MIT](https://github.com/Ferase/dnh-ph3sx/blob/HEAD/LICENSE.md) © Michael Serajnik
 
 Explicitly excluded from the MIT license is the file
 `server/src/dictionary/files/functions.json`. It contains a parsed version of
@@ -175,7 +194,7 @@ expanded it a bit.
 
 The built-in ph3 engine library function documentation is a parsed version of
 [Sparen of Iría][sparen]'s [ph3 function reference][sparen-function-reference],
-for which he was so kind as to give me [his permission](sparen_permission.md)
+for which he was so kind as to give me [his permission](https://github.com/Ferase/dnh-ph3sx/blob/HEAD/sparen_permission.md)
 to use it. The only thing I did was transforming it into a format that is
 easier for me to work with and applying some automatic text transformations.
 
@@ -195,7 +214,7 @@ the top of this readme) is one of [Alphes' Touhou portraits][alphes-portraits]
 (free to use and edit for non-commercial projects). I have simply made it
 square and adjusted the size so it fits the VS Code Marketplace guidelines.
 
-[syntax-highlighting-example]: https://github.com/mserajnik/dnh/raw/master/images/syntax-highlighting-example.png
+[syntax-highlighting-example]: https://github.com/Ferase/dnh-ph3sx/raw/master/images/syntax-highlighting-example.png
 
 [vs-code]: https://code.visualstudio.com/
 [touhou-danmakufu]: https://en.touhouwiki.net/wiki/Touhou_Danmakufu
@@ -209,5 +228,6 @@ square and adjusted the size so it fits the VS Code Marketplace guidelines.
 [alphes-portraits]: http://gensoukyou.1000.tv/dl.html
 
 [maintainer-url]: https://github.com/mserajnik
-[issues-url]: https://github.com/mserajnik/dnh/issues/new
-[project-url]: https://github.com/mserajnik/dnh
+[secondary-maintainer-url]: https://github.com/Ferase/
+[issues-url]: https://github.com/Ferase/dnh-ph3sx/issues/new
+[project-url]: https://github.com/Ferase/dnh-ph3sx

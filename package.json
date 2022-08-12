@@ -1,21 +1,23 @@
 {
-  "name": "dnh",
-  "version": "1.10.0",
-  "description": "Touhou Danmakufu extension for Visual Studio Code",
+  "name": "dnh-ph3sx",
+  "version": "1.10.0-ph3sx",
+  "description": "Touhou Danmakufu ph3sx extension for Visual Studio Code",
   "keywords": [
     "touhou",
     "touhou-danmakufu",
+    "touhou-danmakufu-ph3sx",
+    "ph3sx",
     "syntax-highlighting",
     "language-server"
   ],
-  "author": "Michael Serajnik <ms@mserajnik.at>",
+  "author": "Michael Serajnik <ms@mserajnik.at> with modifications by Ferase <ferase222@gmail.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mserajnik/dnh.git"
+    "url": "https://github.com/Ferase/dnh-ph3sx.git"
   },
   "bugs": {
-    "url": "https://github.com/mserajnik/dnh/issues"
+    "url": "https://github.com/Ferase/dnh-ph3sx/issues"
   },
   "scripts": {
     "vscode:prepublish": "cd client && yarn update-vscode && cd .. && yarn compile",
@@ -25,12 +27,12 @@
     "test": "yarn compile"
   },
   "publisher": "mserajnik",
-  "displayName": "dnh",
+  "displayName": "dnh-ph3sx",
   "engines": {
     "vscode": "^1.33.0"
   },
   "activationEvents": [
-    "onLanguage:dnh"
+    "onLanguage:dnh-ph3sx"
   ],
   "main": "./client/out/extension",
   "categories": [
@@ -44,10 +46,12 @@
   "contributes": {
     "languages": [
       {
-        "id": "dnh",
+        "id": "dnh-ph3sx",
         "aliases": [
           "Touhou Danmakufu",
-          "dnh"
+          "ph3sx",
+          "dnh",
+          "dnh ph3sx"
         ],
         "extensions": [
           ".dnh"
@@ -64,20 +68,20 @@
     },
     "grammars": [
       {
-        "language": "dnh",
-        "scopeName": "source.dnh",
+        "language": "dnh-ph3sx",
+        "scopeName": "source.dnh.ph3sx",
         "path": "./syntaxes/dnh.tmLanguage.json"
       }
     ],
     "snippets": [
       {
-        "language": "dnh",
+        "language": "dnh-ph3sx",
         "path": "./snippets/dnh.json"
       }
     ]
   },
   "devDependencies": {
-    "@types/node": "^13.7.0",
+    "@types/node": "^13.13.51",
     "@typescript-eslint/eslint-plugin": "^2.19.0",
     "@typescript-eslint/parser": "^2.19.0",
     "eslint": "^6.8.0",

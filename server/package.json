@@ -1,7 +1,7 @@
 {
   "name": "dnh-server",
-  "version": "1.10.0",
-  "description": "Touhou Danmakufu language server",
+  "version": "1.10.0-ph3sx",
+  "description": "Touhou Danmakufu ph3sx language server",
   "author": "Michael Serajnik <ms@mserajnik.at>",
   "license": "MIT",
   "publisher": "vscode",
