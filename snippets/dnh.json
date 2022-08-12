@@ -62,7 +62,16 @@
   "Insert ascent": {
     "prefix": "ascent",
     "body": [
-      "ascent (in in ${1:0}..${2:10}) {",
+      "ascent (${1:i} in ${2:0}..${3:10}) {",
+      "\t${3:// do something}",
+      "}"
+    ],
+    "description": "Insert an ascent loop"
+  },
+  "Insert descent": {
+    "prefix": "descent",
+    "body": [
+      "descent (${1:i} in ${2:0}..${3:10}) {",
       "\t${3:// do something}",
       "}"
     ],
@@ -112,7 +121,7 @@
   "Insert for": {
     "prefix": "for",
     "body": [
-      "for (in in ${1:0}..${2:10}) {",
+      "for (${1:i} in ${2:0}..${3:10}) {",
       "\t${3:// do something}",
       "}"
     ],
@@ -121,7 +130,7 @@
   "Insert for each": {
     "prefix": "for each",
     "body": [
-      "for each (in in ${1:0}..${2:10}) {",
+      "for each (${1:i} in ${2:0}..${3:10}) {",
       "\t${3:// do something}",
       "}"
     ],
