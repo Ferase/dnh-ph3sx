@@ -5,14 +5,26 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
-## [1.10.0-ph3sx]
+## [1.10.0b-ph3sx]
+
+### Added
+
++ Snippet for descent
+
+### Changed
+
++ Snippets for for, for-each, ascent, and descent loops now contain 3 arguments that can be tabbed across **(i** in **0**..**10**)
+
+### Fixed
+
++ Fixed a grammatical error in the for, for-each, and ascent loops
 
 ## [1.10.0-ph3sx] - 2022-08-12
 
 ### Added
 
 + All ph3sx functions as of engine version 1.32b
-+ Syntax for all ph3sx loop types, variable  declarations, constants, and more
++ Syntax for all ph3sx loop types, veriable declarations, constants, and more
 + Snippets for for loops, for-each loops, async, and functions with return types
 
 ### Changed
