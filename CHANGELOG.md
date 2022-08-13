@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Added
 
-+ Syntax highlighting for defualt ph3sx functions
++ Syntax highlighting for default ph3sx functions
 + A small Python script that takes the source functions file and puts all the function names into a file (not too necessary, but figured I'd include it since I used it)
 
 ## [1.10.0c-ph3sx]
