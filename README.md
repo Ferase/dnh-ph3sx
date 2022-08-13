@@ -30,7 +30,7 @@ comfortable.
 
 ## Note
 
-This is a modified version of the original [DNH VSCode extension by Michael Serajnik](https://github.com/imtbl/dnh) that contains updates for ph3sx. All original code for this extension was made by [mserajnik][maintainer-url] and all I did was add all of the new features and functions ph3sx into the existing files.
+This is a modified version of the original [DNH VSCode extension][old-project-url] by [Michael Serajnik][maintainer-url] that contains updates for ph3sx. All original code for this extension was made by [mserajnik][maintainer-url] and all I did was add all of the new features and functions ph3sx into the existing files.
 
 This fork will be actively maintained as ph3sx is updated and changes/fixes/etc. are found and made to the plugin. All of the below descripts have been modified to include new features, though the majority of their content hasn't been changed as to retain the original documentation of this plugin by the original creator.
 
@@ -146,10 +146,9 @@ The following is a list of keywords that are associated to a snippet:
 + `async`
 + `include`
 
-## Maintainer
+## Maintainers
 
-[mserajnik][maintainer-url]
-[Ferase][secondary-maintainer-url]
+ This repository is maintained by [Ferase][secondary-maintainer-url], and the [original repository][old-project-url] is maintained by [mserajnik][maintainer-url]
 
 ## Contribute
 
@@ -231,3 +230,4 @@ square and adjusted the size so it fits the VS Code Marketplace guidelines.
 [secondary-maintainer-url]: https://github.com/Ferase/
 [issues-url]: https://github.com/Ferase/dnh-ph3sx/issues/new
 [project-url]: https://github.com/Ferase/dnh-ph3sx
+[old-project-url]: https://github.com/imtbl/dnh
