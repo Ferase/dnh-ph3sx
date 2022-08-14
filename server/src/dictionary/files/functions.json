@@ -7682,7 +7682,7 @@
         "arguments": [
             {
                 "name": "frame",
-                "type": "number (Object ID)"
+                "type": "number (int)"
             }
         ],
         "return": {},
