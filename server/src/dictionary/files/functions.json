@@ -16161,5 +16161,41 @@
         "return": {},
         "description": "Fires a player shot with the specified position, speed, angle, damage, penetration, and graphic ID from the player shotsheet.",
         "notes": "ph3sx changed function.\n\nNo longer returns a null value if SetForbidPlayerShot was set to true."
+    },
+    
+    {
+        "name": "SetUserReplayData",
+        "arguments": [
+            {
+                "name": "key",
+                "type": "string"
+            },
+            {
+                "name": "value",
+                "type": "free"
+            }
+        ],
+        "return": {},
+        "description": "Sets a value to the given key for the current replay.",
+        "notes": "This isn't officially documented yet, so hopefully the arguments are right! Scream at me on GitHub/Discord if they aren't."
+    },
+    {
+        "name": "GetUserReplayData",
+        "arguments": [
+            {
+                "name": "replayindex",
+                "type": "number (int)"
+            },
+            {
+                "name": "key",
+                "type": "string"
+            }
+        ],
+        "return": {
+            "name": "value stored in the given key in the specified replayindex",
+            "type": "free"
+        },
+        "description": "Returns the value within the given key for the specified replay index, previously set by SetUserReplayData.",
+        "notes": "This isn't officially documented yet, so hopefully the arguments are right! Scream at me on GitHub/Discord if they aren't."
     }
 ]

@@ -63,7 +63,7 @@
     "prefix": "ascent",
     "body": [
       "ascent (${1:i} in ${2:0}..${3:10}) {",
-      "\t${3:// do something}",
+      "\t${4:// do something}",
       "}"
     ],
     "description": "Insert an ascent loop"
@@ -72,7 +72,7 @@
     "prefix": "descent",
     "body": [
       "descent (${1:i} in ${2:0}..${3:10}) {",
-      "\t${3:// do something}",
+      "\t${4:// do something}",
       "}"
     ],
     "description": "Insert an ascent loop"
@@ -122,7 +122,7 @@
     "prefix": "for",
     "body": [
       "for (${1:i} in ${2:0}..${3:10}) {",
-      "\t${3:// do something}",
+      "\t${4:// do something}",
       "}"
     ],
     "description": "Insert a for loop (ph3sx)"
@@ -131,7 +131,7 @@
     "prefix": "for each",
     "body": [
       "for each (${1:i} in ${2:0}..${3:10}) {",
-      "\t${3:// do something}",
+      "\t${4:// do something}",
       "}"
     ],
     "description": "Insert a for-each loop (ph3sx)"
@@ -140,7 +140,7 @@
     "prefix": "async",
     "body": [
       "async {",
-      "\t${3:// do something}",
+      "\t${1:// do something}",
       "}"
     ],
     "description": "Insert an async task (ph3sx)"

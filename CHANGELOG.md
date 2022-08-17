@@ -5,6 +5,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [1.10.0f-ph3sx]
+
+### Added
+
++ Included entries for SetUserReplayData and GetUserReplayData (These are currently undocumented, so please let me know if I screwed up any argument types or something)
+
+### Fixed
+
++ Fixed an issue where > and >= wouldn't highlight
++ Fixed an issue where the for, for-each, ascent, and descent snippets would label the contect argument as argument 3 when it sould be 4, causing the actual 3rd argument to populate in the content as well
+
 ## [1.10.0e-ph3sx]
 
 ### Fixed
