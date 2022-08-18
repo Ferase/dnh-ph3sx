@@ -61,6 +61,10 @@
       "name": "keyword.operator.symbol.dnh"
     },
     {
+      "match": "^\\s*(bool|char|float|int|let|var|string|const|<bool>|<char>|<float>|<int>|<void>|<string>)\\s(bool|char|float|int|let|var|string)\\b",
+      "name": "storage.type.variable.constant.dnh"
+    },
+    {
       "match": "^\\s*(bool|char|float|int|let|var|string|const|<bool>|<char>|<float>|<int>|<void>|<string>)\\b",
       "name": "storage.type.variable.dnh"
     },

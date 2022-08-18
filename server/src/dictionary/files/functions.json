@@ -7702,7 +7702,7 @@
             "type": "type (int)"
         },
         "description": "Returns the type of the given value.",
-        "notes": "ph3sx function.\n\nExample:\n-60i -> VAR_INT\n920 -> VAR_FLOAT\nfalse -> VAR_BOOL\n\"str\" -> VAR_STRING\n[8, 0, 2] -> VAR_ARRAY"
+        "notes": "ph3sx function.\n\nExample:\n- -60i -> VAR_INT\n- 920 -> VAR_FLOAT\n- false -> VAR_BOOL\n- \"str\" -> VAR_STRING\n- [8, 0, 2] -> VAR_ARRAY"
     },
     {
         "name": "ftypeof",
@@ -7717,7 +7717,7 @@
             "type": "type (int)"
         },
         "description": "Returns the root type of the given value.",
-        "notes": "ph3sx function.\n\nExample:\n920 -> VAR_FLOAT\nfalse -> VAR_BOOL\n\"str\" -> VAR_CHAR\n[8, 0, 2] -> VAR_FLOAT\n[[[\"a\"]]] -> VAR_CHAR"
+        "notes": "ph3sx function.\n\nExample:\n- 920 -> VAR_FLOAT\n- false -> VAR_BOOL\n- \"str\" -> VAR_CHAR\n- [8, 0, 2] -> VAR_FLOAT\n- [[[\"a\"]]] -> VAR_CHAR"
     },
     {
         "name": "resize",

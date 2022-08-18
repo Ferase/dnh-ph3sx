@@ -5,6 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [1.10.0h-ph3sx]
+
+### Fixed
+
++ Fixed an issue where variable types declared as constants wouldn't have their respecitve type highlighted (e.g. the "int" in const int, etc.)
++ Fixed the notes for <kbd>typeof</kbd> and <kbd>ftypeof</kbd> not appearing in a list format
+
 ## [1.10.0g-ph3sx]
 
 ### Added
