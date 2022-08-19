@@ -41,7 +41,7 @@
       "name": "keyword.control.flow.dnh"
     },
     {
-      "match": "^\\s*#(TouhouDanmakufu|ScriptVersion|ID|Title|Text|Image|System|Background|BGM|Player|ReplayName|UserShotData|UserItemData)\\b",
+      "match": "^\\s*#(東方弾幕風|TouhouDanmakufu|ScriptVersion|ID|Title|Text|Image|System|Background|BGM|Player|ReplayName|UserShotData|UserItemData)\\b",
       "name": "keyword.control.header.dnh"
     },
     {
@@ -61,7 +61,7 @@
       "name": "keyword.operator.symbol.dnh"
     },
     {
-      "match": "^\\s*(bool|char|float|int|let|var|string|const|<bool>|<char>|<float>|<int>|<void>|<string>)\\s(bool|char|float|int|let|var|string)\\b",
+      "match": "^\\s*(const)\\s(bool|char|float|int|let|var|string)\\b",
       "name": "storage.type.variable.constant.dnh"
     },
     {

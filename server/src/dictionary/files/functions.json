@@ -12766,6 +12766,30 @@
         "notes": "ph3sx function."
     },
     {
+        "name": "ObjParticleList_SetExtraData",
+        "arguments": [
+            {
+                "name": "objID",
+                "type": "number (Object ID)"
+            },
+            {
+                "name": "data1",
+                "type": "free"
+            },
+            {
+                "name": "data2",
+                "type": "free"
+            },
+            {
+                "name": "data3",
+                "type": "free"
+            }
+        ],
+        "return": {},
+        "description": "Sets instance extra data.",
+        "notes": "ph3sx function.\n\nThese can be freely utilized by the scripters in case a custom shader is used."
+    },
+    {
         "name": "ObjParticleList_AddInstance",
         "arguments": [
             {

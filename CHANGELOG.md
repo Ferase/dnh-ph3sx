@@ -5,6 +5,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [1.10.0i-ph3sx]
+
+### Added
+
++ Added the function <kbd>ObjParticleList_SetExtraData</kbd> into the language server (because I forgot lol)
++ Added the Japanese header (<kbd>東方弾幕風</kbd>) into the syntax
+
+### Changed
+
++ Smoothed out some redundancy for the previous update's <kbd>const</kbd> fix.
+
 ## [1.10.0h-ph3sx]
 
 ### Fixed
