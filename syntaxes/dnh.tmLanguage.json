@@ -25,12 +25,44 @@
       "name": "variable.parameter.enum.event.dnh"
     },
     {
-      "match": "\\b(ID_INVALID|KEY_INVALID|OBJ_[\\w_]+|TYPE_[\\w_]+|ITEM_[\\w_]+)\\b",
+      "match": "\\b(KEY_FREE|KEY_PUSH|KEY_HOLD|KEY_PULL|KEY_[A-Z]|KEY_[0-9]|KEY_F[1-10]|KEY_NUMPAD[0-9]|KEY_MINUS|KEY_EQUALS|KEY_SLASH|KEY_BACK|KEY_TAB|KEY_SPACE|KEY_LBRACKET|KEY_RBRACKET|KEY_SEMICOLON|KEY_APOSTROPHE|KEY_GRAVE|KEY_BACKSLASH|KEY_YEN|KEY_AT|KEY_COLON|KEY_UNDERLINE|KEY_CIRCUMFLEX|KEY_COMMA|KEY_PERIOD|KEY_INSERT|KEY_DELETE|KEY_RETURN|KEY_LCONTROL|KEY_RCONTROL|KEY_LSHIFT|KEY_RSHIFT|KEY_LEFT|KEY_RIGHT|KEY_UP|KEY_DOWN|KEY_ADD|KEY_SUBTRACT|KEY_MULTIPLY|KEY_DIVIDE|KEY_DECIMAL|KEY_NUMPADEQUALS|KEY_ESCAPE)\\b",
+      "name": "variable.parameter.enum.key.dnh"
+    },
+    {
+      "match": "\\b(OWNER_PLAYER|OWNER_ENEMY)\\b",
+      "name": "variable.parameter.enum.owner.dnh"
+    },
+    {
+      "match": "\\b(ID_INVALID|KEY_INVALID|NO_CHANGE|OBJ_[\\w_]+|TYPE_[\\w_]+|ITEM_[\\w_]+|VK_[\\w_]+)\\b",
       "name": "variable.parameter.enum.other.dnh"
     },
     {
-      "match": "\\b(BLEND_ALPHA|BLEND_ADD_RGB|BLEND_ADD_ARGB|BLEND_MULTIPLY|BLEND_SUBTRACT|BLEND_INV_DESTRGB)\\b",
+      "match": "\\b(BLEND_ALPHA|BLEND_ALPHA_INV|BLEND_ADD_RGB|BLEND_ADD_ARGB|BLEND_MULTIPLY|BLEND_SUBTRACT|BLEND_INV_DESTRGB)\\b",
       "name": "variable.parameter.enum.blendtype.dnh"
+    },
+    {
+      "match": "\\b(FILTER_NONE|FILTER_POINT|FILTER_LINEAR|FILTER_ANISOTROPIC)\\b",
+      "name": "variable.parameter.enum.filtertype.dnh"
+    },
+    {
+      "match": "\\b(TYPE_SCRIPT_ALL|TYPE_SCRIPT_PLAYER|TYPE_SCRIPT_SINGLE|TYPE_SCRIPT_PLURAL|TYPE_SCRIPT_STAGE|TYPE_SCRIPT_PACKAGE)\\b",
+      "name": "variable.parameter.enum.scripttype.dnh"
+    },
+    {
+      "match": "\\b(TYPE_ALL|TYPE_SHOT|TYPE_CHILD|TYPE_IMMEDIATE|TYPE_FADE|TYPE_ITEM)\\b",
+      "name": "variable.parameter.enum.shottype.dnh"
+    },
+    {
+      "match": "\\b(LERP_LINEAR|LERP_SMOOTH|LERP_SMOOTHER|LERP_ACCELERATE|LERP_DECELERATE)\\b",
+      "name": "variable.parameter.enum.interptype.dnh"
+    },
+    {
+      "match": "\\b(ALIGNMENT_LEFT|ALIGNMENT_CENTER|ALIGNMENT_RIGHT)\\b",
+      "name": "variable.parameter.enum.alignment.dnh"
+    },
+    {
+      "match": "\\b(OBJ_PRIMITIVE_2D|OBJ_SPRITE_2D|OBJ_SPRITE_LIST_2D|OBJ_PRIMITIVE_3D|OBJ_SPRITE_3D|OBJ_MESH|OBJ_TEXT|OBJ_SOUND|OBJ_FILE_TEXT|OBJ_FILE_BINARY|OBJ_PLAYER|OBJ_SPELL|OBJ_ENEMY|OBJ_ENEMY_BOSS_SCENE|OBJ_SHOT|OBJ_LOOSE_LASER|OBJ_STRAIGHT_LASER|OBJ_CURVE_LASER|OBJ_ITEM)\\b",
+      "name": "variable.parameter.enum.object.dnh"
     },
     {
       "match": "\\b(INFO_SCRIPT_TYPE|INFO_SCRIPT_PATH|INFO_SCRIPT_ID|INFO_SCRIPT_TITLE|INFO_SCRIPT_TEXT|INFO_SCRIPT_IMAGE|INFO_SCRIPT_REPLAY_NAME|INFO_LIFE|INFO_DAMAGE_RATE_SHOT|INFO_DAMAGE_RATE_SPELL|INFO_SHOT_HIT_COUNT|INFO_IS_SPELL|INFO_IS_LAST_SPELL|INFO_IS_DURABLE_SPELL|INFO_IS_LAST_STEP|INFO_TIMER|INFO_TIMERF|INFO_ORGTIMERF|INFO_SPELL_SCORE|INFO_REMAIN_STEP_COUNT|INFO_ACTIVE_STEP_LIFE_COUNT|INFO_ACTIVE_STEP_TOTAL_MAX_LIFE|INFO_ACTIVE_STEP_TOTAL_LIFE|INFO_PLAYER_SHOOTDOWN_COUNT|INFO_PLAYER_SPELL_COUNT|INFO_ACTIVE_STEP_LIFE_RATE_LIST|INFO_CURRENT_LIFE|INFO_CURRENT_LIFE_MAX|INFO_RECT|INFO_DELAY_COLOR|INFO_BLEND|INFO_COLLISION|INFO_COLLISION_LIST|INFO_ITEM_SCORE|REPLAY_FILE_PATH|REPLAY_DATE_TIME|REPLAY_USER_NAME|REPLAY_TOTAL_SCORE|REPLAY_FPS_AVERAGE|REPLAY_PLAYER_NAME|REPLAY_STAGE_INDEX_LIST|REPLAY_STAGE_START_SCORE_LIST|REPLAY_STAGE_LAST_SCORE_LIST|REPLAY_COMMENT)\\b",
@@ -61,11 +93,7 @@
       "name": "keyword.operator.symbol.dnh"
     },
     {
-      "match": "^\\s*(const)\\s(bool|char|float|int|let|var|string)\\b",
-      "name": "storage.type.variable.constant.dnh"
-    },
-    {
-      "match": "^\\s*(bool|char|float|int|let|var|string|const|<bool>|<char>|<float>|<int>|<void>|<string>)\\b",
+      "match": "\\s*(bool|char|float|int|let|var|string|const|<bool>|<char>|<float>|<int>|<void>|<string>)\\b",
       "name": "storage.type.variable.dnh"
     },
     {

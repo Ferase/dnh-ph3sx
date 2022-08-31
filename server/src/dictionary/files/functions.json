@@ -15375,7 +15375,7 @@
             }
         ],
         "return": {
-            "name": "position of the given object's node at the speicifed nodepointer formatted as [x, y]",
+            "name": "position of the given object's node at the specified nodepointer formatted as [x, y]",
             "type": "number (float) []"
         },
         "description": "Returns the [x, y] position array of the specified node.",
