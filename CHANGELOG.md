@@ -5,6 +5,24 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [1.10.1-ph3sx]
+
+### Added
+
++ Added syntax for <kbd>VK</kbd> and <kbd>KEY</kbd> enums
++ Added syntax for <kbd>ALIGNMENT</kbd> enums
++ Added syntax for <kbd>FILTER</kbd> enums
++ Added syntax for <kbd>OBJ</kbd> enums
++ Added syntax for <kbd>LERP</kbd> enums
++ Added syntax for <kbd>TYPE</kbd> enums ("scripttype" and "shottype" scopes)
++ Added syntax for <kbd>BLEND_ALPHA_INV</kbd> in the "blendtype" enum scope
++ Added syntax for <kbd>NO_CHANGE</kbd> in the "other" enum scope
+
+### Fixed
+
++ Fixed a typo in <kbd>ObjCrLaser_GetNodePosition</kbd>
++ Fixed an issue where variable declarations in for, for-each, ascent, and descent loops wouldn't highlight
+
 ## [1.10.0i-ph3sx]
 
 ### Added
