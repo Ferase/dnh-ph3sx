@@ -6069,7 +6069,7 @@
         ],
         "return": {},
         "description": "When set to true, allows the sound object associated with objID to continue where it left off instead of restarting every time ObjSound_Play is called.",
-        "notes": "This function is renamed top ObjSound_SetResumeEnable in ph3sx, leaving this name defunct in that engine. Only use this variant in vanilla ph3."
+        "notes": "This function is renamed to ObjSound_SetResumeEnable in ph3sx, leaving this name defunct in that engine. Only use this variant in vanilla ph3."
     },
     {
         "name": "ObjSound_SetSoundDivision",
