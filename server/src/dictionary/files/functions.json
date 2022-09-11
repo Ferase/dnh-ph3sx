@@ -14013,6 +14013,22 @@
         "notes": "ph3sx changed function.\n\nAlso works on C-pattern movements."
     },
     {
+        "name": "ObjMove_SetAngularAcceleration",
+        "arguments": [
+            {
+                "name": "objID",
+                "type": "number (Object ID)"
+            },
+            {
+                "name": "waccel",
+                "type": "number"
+            }
+        ],
+        "return": {},
+        "description": "Sets the angular acceleration (change in angular velocity per frame) of the object associated with objID.",
+        "notes": "ph3sx function.\n\nWorks on A-pattern and C-pattern movements."
+    },
+    {
         "name": "ObjMove_SetAngularMaxVelocity",
         "arguments": [
             {
