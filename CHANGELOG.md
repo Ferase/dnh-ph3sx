@@ -5,6 +5,21 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [1.10.1b-ph3sx]
+
+### Added
+
++ Added a function reference for `ObjMove_SetAngularAcceleration` (thank you Mugenri!)
++ Added syntax highlighting for the `func` function declaration
+
+### Changed
+
++ Made `local` highlight in the same style and scope as `function`, `task`, etc. since it's a block declarator
+
+### Fixed
+
++ Fixed a typo on the notes for `ObjSound_SetRestartEnable` (thanks again Mugenri)
+
 ## [1.10.1-ph3sx]
 
 ### Added

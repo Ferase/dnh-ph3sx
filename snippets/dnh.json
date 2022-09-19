@@ -180,7 +180,7 @@
     ],
     "description": "Insert a boolean-type variable (ph3sx)"
   },
-  "Insert function<void>": {
+  "Insert function with void return": {
     "prefix": "function<void>",
     "body": [
       "function<void> functionName (${1:arguments}) {",
@@ -189,7 +189,7 @@
     ],
     "description": "Insert a function that will return nothing (ph3sx)"
   },
-  "Insert function<int>": {
+  "Insert function with int return": {
     "prefix": "function<int>",
     "body": [
       "function<int> functionName (${1:arguments}) {",
@@ -198,7 +198,7 @@
     ],
     "description": "Insert a function that will return an integer value (ph3sx)"
   },
-  "Insert function<float>": {
+  "Insert function with float return": {
     "prefix": "function<float>",
     "body": [
       "function<float> functionName (${1:arguments}) {",
@@ -207,7 +207,7 @@
     ],
     "description": "Insert a function that will return a floating-point value (ph3sx)"
   },
-  "Insert function<string>": {
+  "Insert function with string return": {
     "prefix": "function<string>",
     "body": [
       "function<string> functionName (${1:arguments}) {",
@@ -216,7 +216,7 @@
     ],
     "description": "Insert a function that will return a text string (ph3sx)"
   },
-  "Insert function<char>": {
+  "Insert function with char return": {
     "prefix": "function<char>",
     "body": [
       "function<char> functionName (${1:arguments}) {",
@@ -225,7 +225,7 @@
     ],
     "description": "Insert a function that will return a text character (ph3sx)"
   },
-  "Insert function<bool>": {
+  "Insert function with bool return": {
     "prefix": "function<bool>",
     "body": [
       "function<bool> functionName (${1:arguments}) {",
