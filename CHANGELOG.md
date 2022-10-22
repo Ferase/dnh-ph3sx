@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [1.10.1c-ph3sx]
+
+### Fixed
+
++ Fixed an issue where variable declarators would still highlight even if they were a substring of another word (thanks again Mugenri)
+
 ## [1.10.1b-ph3sx]
 
 ### Added
