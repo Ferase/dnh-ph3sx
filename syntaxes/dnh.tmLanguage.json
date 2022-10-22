@@ -93,7 +93,7 @@
       "name": "keyword.operator.symbol.dnh"
     },
     {
-      "match": "\\s*(bool|char|float|int|let|var|string|const|<bool>|<char>|<float>|<int>|<void>|<string>)\\b",
+      "match": "\\b\\s*(bool|char|float|int|let|var|string|const|<bool>|<char>|<float>|<int>|<void>|<string>)\\b",
       "name": "storage.type.variable.dnh"
     },
     {
