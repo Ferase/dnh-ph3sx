@@ -8147,7 +8147,7 @@
             },
             {
                 "name": "value2",
-                "type": "number)"
+                "type": "number"
             }
         ],
         "return": {
