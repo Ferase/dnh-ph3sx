@@ -5,6 +5,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [1.10.1e-ph3sx]
+
+### Added
+
++ Added syntax highlighting for anything written as `ObjXX_XX`
+
+### Fixed
+
++ Corrected `ObjParticleList_SetAngleXYZ` to `ObjParticleList_SetAngle` in the language server
++ Added syntax highlighting to the `=` symbol (how did I miss this?)
+
 ## [1.10.1d-ph3sx]
 
 ### Fixed

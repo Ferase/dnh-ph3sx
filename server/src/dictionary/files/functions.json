@@ -12702,7 +12702,7 @@
         "notes": "ph3sx function."
     },
     {
-        "name": "ObjParticleList_SetAngleXYZ",
+        "name": "ObjParticleList_SetAngle",
         "arguments": [
             {
                 "name": "objID",
