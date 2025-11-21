@@ -7384,7 +7384,7 @@
             }
         ],
         "return": {},
-        "description": "Specify the number of frames after a graze where graze is not counted for the shot object associated with objID.",
+        "description": "Specify the number of frames after a graze where graze is not counted for the shot or laser object associated with objID.",
         "notes": "If you specify 0, the laser object can be grazed only once.\n\nThe default value is 20 frames (3 graze/second)."
     },
     {
