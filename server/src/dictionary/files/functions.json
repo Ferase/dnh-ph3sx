@@ -4377,7 +4377,7 @@
         ],
         "return": {},
         "description": "Deletes object associated with objID.",
-        "notes": ""
+        "notes": "Marks the object for deletion and sets it to inactive. The object will be truly deleted on the start of the next frame."
     },
     {
         "name": "Obj_IsDeleted",
@@ -6737,7 +6737,7 @@
         ],
         "return": {},
         "description": "Sets the damage rate of player attacks against the enemy object associated with objID.",
-        "notes": "Setting to 0 will cause the enemy to take no damage\n\nDefaults to 100 (100%).\n\nValues above 100 are possible.\n\nValues below 0 are also possible, but may cause the boss health to overflow."
+        "notes": "Setting to 0 will cause the enemy to take no damage\n\nDefaults to 1 (100%).\n\nValues above 1 are possible.\n\nValues below 0 are also possible, but may cause the boss health to overflow."
     },
     {
         "name": "ObjEnemy_SetIntersectionCircleToShot",
@@ -7002,7 +7002,23 @@
         ],
         "return": {},
         "description": "Gives the shot object associated with objID the specified blend type.",
-        "notes": "Available blend types are:\n\nBLEND_ALPHA, BLEND_ADD_RGB, BLEND_MULTIPLY, BLEND_SUBTRACT, BLEND_ADD_ARGB, BLEND_INV_DESTRGB, and BLEND_SHADOW (undocumented)."
+        "notes": "Available blend types are:\n\nBLEND_ALPHA, BLEND_ADD_RGB, BLEND_MULTIPLY, BLEND_SUBTRACT, BLEND_ADD_ARGB, BLEND_INV_DESTRGB, and BLEND_SHADOW (undocumented).\n\nThis function is renamed to ObjShot_SetDelayBlendType in ph3sx 1.33 and above, leaving this name defunct in that engine. Only use this variant in older ph3sx versions or vanilla ph3."
+    },
+    {
+        "name": "ObjShot_SetDelayBlendType",
+        "arguments": [
+            {
+                "name": "objID",
+                "type": "number (Object ID)"
+            },
+            {
+                "name": "blendtype",
+                "type": "const"
+            }
+        ],
+        "return": {},
+        "description": "Gives the shot object associated with objID the specified blend type.",
+        "notes": "ph3sx renamed function.\n\nAvailable blend types are:\n\nBLEND_ALPHA, BLEND_ADD_RGB, BLEND_MULTIPLY, BLEND_SUBTRACT, BLEND_ADD_ARGB, BLEND_INV_DESTRGB, and BLEND_SHADOW (undocumented).\n\nThis function replaces ObjShot_SetSourceBlendType from vanilla ph3 in ph3sx 1.33. Running it by the original name will raise an error in this version of ph3sx, and running the function by the new name in older ph3sx or vanilla ph3 will also raise an error."
     },
     {
         "name": "ObjShot_SetDamage",
@@ -7356,7 +7372,7 @@
         "notes": "This value is different from the render width.\n\nThis can be set to be larger than the laser object's render width."
     },
     {
-        "name": "ObjLaser_SetGrazeInvalidFrame",
+        "name": "ObjShot_SetGrazeInvalidFrame",
         "arguments": [
             {
                 "name": "objID",
@@ -7368,7 +7384,7 @@
             }
         ],
         "return": {},
-        "description": "Specify the number of frames after a graze where graze is not counted for the laser object associated with objID.",
+        "description": "Specify the number of frames after a graze where graze is not counted for the shot object associated with objID.",
         "notes": "If you specify 0, the laser object can be grazed only once.\n\nThe default value is 20 frames (3 graze/second)."
     },
     {
@@ -14682,7 +14698,7 @@
             "type": "number"
         },
         "description": "Returns data on the enemy object associated with objID based on the query.",
-        "notes": "ph3sx changed function.\n\nPossible infotypes are:\n\nINFO_LIFE - Returns the life points of the enemy\n\nINFO_DAMAGE_RATE_SHOT - Returns the damage rate percentage of normal player shots set by ObjEnemy_SetDamageRate on a 0 to 100 scale\n\nINFO_DAMAGE_RATE_SPELL - Returns the damage rate percentage of player bombs set by ObjEnemy_SetDamageRate on a 0 to 100 scale\n\nINFO_SHOT_HIT_COUNT - Returns the amount of times the enemy was hit by player bullets in the previous frame\n\nINFO_DAMAGE_PREVIOUS_FRAME - Returns the amount of damage the enemy received in the previous frame."
+        "notes": "ph3sx changed function.\n\nPossible infotypes are:\n\nINFO_LIFE - Returns the life points of the enemy\n\nINFO_DAMAGE_RATE_SHOT - Returns the damage rate percentage of normal player shots set by ObjEnemy_SetDamageRate on a 0 to 1 scale\n\nINFO_DAMAGE_RATE_SPELL - Returns the damage rate percentage of player bombs set by ObjEnemy_SetDamageRate on a 0 to 1 scale\n\nINFO_SHOT_HIT_COUNT - Returns the amount of times the enemy was hit by player bullets in the previous frame\n\nINFO_DAMAGE_PREVIOUS_FRAME - Returns the amount of damage the enemy received in the previous frame."
     },
     {
         "name": "ObjEnemy_SetAutoDelete",
@@ -15713,7 +15729,7 @@
         ],
         "return": {},
         "description": "Sets the shot type of the given shot pattern object.",
-        "notes": "ph3sx function.\n\nSupported types:\n- OBJ_SHOT\n- OBJ_LOOSE_LASER\n- OBJ_CURVE_LASER"
+        "notes": "ph3sx function.\n\nSupported types:\n- OBJ_SHOT\n- OBJ_LOOSE_LASER\n- OBJ_CURVE_LASER\n- OBJ_STRAIGHT_LASER"
     },
     {
         "name": "ObjPatternShot_SetShotCount",
